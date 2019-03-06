@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>JavaScript Favorite Bands</title>
+</head>
+<body>
+    <script>
+    var myBands=["Erasure", "Moby", "Depeche Mode","OMD","Mecano"];
+    var myBandsLower=String.prototype.toLowerCase.apply(myBands).split(",");
+
+    var yourBands=prompt("What's your favorite band?");
+    var yourBandsLower=yourBands.toLowerCase();
+
+    var bandIndexOf=myBandsLower.indexOf(yourBandsLower);
+    
+
+    if(bandIndexOf<0){
+        alert("No, they're pretty lame");
+    }
+    else{
+        alert("Yeah! I love them");
+    }
+    </script>
+    
+</body>
+</html>
